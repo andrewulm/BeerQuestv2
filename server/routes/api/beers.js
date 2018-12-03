@@ -40,7 +40,6 @@ async function loadPostsCollection() {
     const client = await mongodb.MongoClient.connect('mongodb://andrew:andrew1234@ds127439.mlab.com:27439/vue_express', {
         useNewUrlParser: true
     });
-
     return client.db('vue_express').collection('beers');
 }
 
